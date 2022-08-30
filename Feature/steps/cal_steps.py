@@ -34,7 +34,7 @@ def step_impl(context):
         time.sleep(20)
 
 
-    result = context.table[0][3]
+    total = context.table[0][3]
     res = context.driver.find_element(By.XPATH, "//*[@id='sciOutPut']").text
     print('res:',res)
-    assert res==result
+    assert res==total
